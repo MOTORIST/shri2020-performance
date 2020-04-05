@@ -75,6 +75,13 @@ dl {
   margin-bottom: 1rem;
 }
 
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
 a {
   color: #007bff;
   text-decoration: none;
@@ -106,6 +113,11 @@ svg {
   vertical-align: middle;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+
 button {
   border-radius: 0;
 }
@@ -135,6 +147,10 @@ select {
   text-transform: none;
 }
 
+select {
+  word-wrap: normal;
+}
+
 button,
 [type="button"],
 [type="reset"],
@@ -149,11 +165,23 @@ button:not(:disabled),
   cursor: pointer;
 }
 
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
 }
 
 h2, .h2 {
@@ -168,8 +196,21 @@ h4, .h4 {
   font-size: 1.5rem;
 }
 
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
 .purchase-list__item + .purchase-list__item {
   margin-top: 10px;
+}
+
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
 }
 
 .card {
@@ -193,6 +234,37 @@ header {
   box-sizing: border-box;
   padding: 0 40px;
   border-bottom: 1px solid #f0f0f0
+}
+
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+
+.close:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+  opacity: .75;
+}
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  appearance: none;
+}
+
+a.close.disabled {
+  pointer-events: none;
 }
 
 
