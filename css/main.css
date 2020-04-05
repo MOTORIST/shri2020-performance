@@ -664,16 +664,6 @@ html {
         padding-top: 14px
     }
 
-    .button {
-        height: 44px;
-        float: right;
-        margin-right: 0
-    }
-
-    .button_yellow {
-        float: left
-    }
-
     .critical-cam {
         height: 177px
     }
