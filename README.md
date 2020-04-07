@@ -1,3 +1,5 @@
+# РЕШЕНИЕ ДОМАШКИ НАХОДИТСЯ В РЕПОЗИТОРИИ https://github.com/MOTORIST/shri2020-performance-2
+
 # ШРИ 2020: Performance
 
 ## Задание
